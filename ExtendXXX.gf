@@ -260,7 +260,7 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
     ReflRNP = cc2 ;
     
     -- ReflPron : RNP ;                   -- myself
-    ReflPron = ss "myself" ;
+    ReflPron = ss "" ;
     
     -- ReflPoss : Num -> CN -> RNP ;      -- my car(s)
     ReflPoss = cc2 ;
@@ -353,21 +353,21 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
     SubjRelNP = cc2 ;
     
     -- iFem_Pron      : Pron ; -- I (Fem)
-    iFem_Pron = ss "i" ;
+    iFem_Pron = ss "" ;
   -- youFem_Pron    : Pron ; -- you (Fem)
-    youFem_Pron = ss "you" ;
+    youFem_Pron = ss "" ;
     -- weFem_Pron     : Pron ; -- we (Fem)
-    weFem_Pron = ss "we" ;
+    weFem_Pron = ss "" ;
     -- youPlFem_Pron  : Pron ; -- you plural (Fem)
-    youPlFem_Pron = ss "you" ;
+    youPlFem_Pron = ss "" ;
     -- theyFem_Pron   : Pron ; -- they (Fem)
-    theyFem_Pron = ss "they" ;
+    theyFem_Pron = ss "" ;
     -- youPolFem_Pron : Pron ; -- you polite (Fem)
-    youPolFem_Pron = ss "you" ;
+    youPolFem_Pron = ss "" ;
     -- youPolPl_Pron  : Pron ; -- you polite plural (Masc)
-    youPolPl_Pron = ss "you" ;
+    youPolPl_Pron = ss "" ;
     -- youPolPlFem_Pron : Pron ; -- you polite plural (Fem)
-    youPolPlFem_Pron = ss "you" ;
+    youPolPlFem_Pron = ss "" ;
 
 -- German
     -- UttAccNP : NP -> Utt ; -- him (accusative)

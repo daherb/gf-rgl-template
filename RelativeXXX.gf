@@ -23,7 +23,7 @@ concrete RelativeXXX of Relative = CatXXX ** open Prelude in{
 -- or suffixing (depending on language) prepositional phrases or genitives.
 
     -- IdRP  : RP ;                      -- which
-    IdRP = ss "which" ;
+    IdRP = ss "" ;
     -- FunRP : Prep -> NP -> RP -> RP ;  -- the mother of whom
     FunRP = cc3 ;
 

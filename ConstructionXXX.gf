@@ -16,17 +16,17 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
   lin
     
     --     hungry_VP     : VP ;                 -- x is hungry / x a faim (Fre)
-    hungry_VP = ss "hungry" ;
+    hungry_VP = ss "" ;
     --     thirsty_VP    : VP ;                 -- x is thirsty / x a soif (Fre)
-    thirsty_VP = ss "thirsty" ;
+    thirsty_VP = ss "" ;
     --     tired_VP      : VP ;                 -- x is tired / x estoy cansado (Spa)
-    tired_VP = ss "tired" ;
+    tired_VP = ss "" ;
     --     scared_VP     : VP ;                 -- x is scared
-    scared_VP = ss "scared" ;
+    scared_VP = ss "" ;
     --     ill_VP        : VP ;                 -- x is ill
-    ill_VP = ss "ill" ;
+    ill_VP = ss "" ;
     --     ready_VP      : VP ;                 -- x is ready
-    ready_VP = ss "ready" ;
+    ready_VP = ss "" ;
     --     has_age_VP    : Card -> VP ;         -- x is y years old / x a y ans (Fre)
     has_age_VP = id SS ;
     --     have_name_Cl  : NP -> NP -> Cl ;     -- x's name is y / x s'appelle y (Fre)
@@ -45,9 +45,9 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
     --     weather_adjCl : AP -> Cl ;           -- it is warm / il fait chaud (Fre)
     weather_adjCl = id SS ;
     --     is_right_VP   : VP ;                 -- he is right / il a raison (Fre)
-    is_right_VP = ss "is right" ;
+    is_right_VP = ss "" ;
 --     is_wrong_VP   : VP ;                 -- he is wrong / han har fel (Swe)
-    is_wrong_VP = ss "is wrong" ;
+    is_wrong_VP = ss "" ;
     
     --     n_units_AP    : Card -> CN -> A  -> AP ;  -- x inches long
     n_units_AP = cc3 ;
@@ -105,53 +105,53 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
     timeunitRange = cc3 ;
     
     -- oneHour : Hour ;
-    oneHour = ss "one" ;
+    oneHour = ss "" ;
     -- twoHour : Hour ;
-    twoHour = ss "two" ;
+    twoHour = ss "" ;
     -- threeHour : Hour ;
-    threeHour = ss "three" ;
+    threeHour = ss "" ;
       -- fourHour : Hour ;
-    fourHour = ss "four" ;
+    fourHour = ss "" ;
     -- fiveHour : Hour ;
-    fiveHour = ss "five" ;
+    fiveHour = ss "" ;
     -- sixHour : Hour ;
-    sixHour = ss "six" ;
+    sixHour = ss "" ;
     -- sevenHour : Hour ;
-    sevenHour = ss "seven" ;
+    sevenHour = ss "" ;
     -- eightHour : Hour ;
-    eightHour = ss "eight" ;
+    eightHour = ss "" ;
     -- nineHour : Hour ;
-    nineHour = ss "nine" ;
+    nineHour = ss "" ;
     -- tenHour : Hour ;
-    tenHour = ss "ten" ;
+    tenHour = ss "" ;
     -- elevenHour : Hour ;
-    elevenHour = ss "eleven" ;
+    elevenHour = ss "" ;
     -- twelveHour : Hour ;
-    twelveHour = ss "twelve" ;
+    twelveHour = ss "" ;
     -- thirteenHour : Hour ;
-    thirteenHour = ss "one" ;
+    thirteenHour = ss "" ;
     -- fourteenHour : Hour ;
-    fourteenHour = ss "two" ;
+    fourteenHour = ss "" ;
     -- fifteenHour : Hour ;
-    fifteenHour = ss "three" ;
+    fifteenHour = ss "" ;
     -- sixteenHour : Hour ;
-    sixteenHour = ss "four" ;
+    sixteenHour = ss "" ;
     -- seventeenHour : Hour ;
-    seventeenHour = ss "five" ;
+    seventeenHour = ss "" ;
     -- eighteenHour : Hour ;
-    eighteenHour = ss "six" ;
+    eighteenHour = ss "" ;
     -- nineteenHour : Hour ;
-    nineteenHour = ss "seven" ;
+    nineteenHour = ss "" ;
     -- twentyHour : Hour ;
-    twentyHour = ss "eight" ;
+    twentyHour = ss "" ;
     -- twentyOneHour : Hour ;
-    twentyOneHour = ss "nine" ;
+    twentyOneHour = ss "" ;
     -- twentyTwoHour : Hour ;
-    twentyTwoHour = ss "ten" ;
+    twentyTwoHour = ss "" ;
     -- twentyThreeHour : Hour ;
-    twentyThreeHour = ss "eleven" ;
+    twentyThreeHour = ss "" ;
     -- twentyFourHour : Hour ;
-    twentyFourHour = ss "twelve" ;
+    twentyFourHour = ss "" ;
     
     -- timeHour : Hour -> Adv ; -- at three a.m./p.m.
     timeHour = id SS ;
@@ -215,130 +215,130 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
 ---- lexicon of special names
 
     -- second_Timeunit : Timeunit ;
-    second_Timeunit = ss "second" ;
+    second_Timeunit = ss "" ;
     -- minute_Timeunit : Timeunit ;
-    minute_Timeunit = ss "Timeunit" ;
+    minute_Timeunit = ss "" ;
     -- hour_Timeunit : Timeunit ;
-    hour_Timeunit = ss "hour"; 
+    hour_Timeunit = ss ""; 
     -- day_Timeunit : Timeunit ;
-    day_Timeunit = ss "day" ;
+    day_Timeunit = ss "" ;
     -- week_Timeunit : Timeunit ;
-    week_Timeunit = ss "week" ;
+    week_Timeunit = ss "" ;
     -- month_Timeunit : Timeunit ;
-    month_Timeunit = ss "month" ;
+    month_Timeunit = ss "" ;
     -- year_Timeunit : Timeunit ;
-    year_Timeunit = ss "year" ;
+    year_Timeunit = ss "" ;
 
     -- monday_Weekday : Weekday ;
-    monday_Weekday = ss "Monday" ;
+    monday_Weekday = ss "" ;
     -- tuesday_Weekday : Weekday ;
-    tuesday_Weekday = ss "Tuesday" ;
+    tuesday_Weekday = ss "" ;
     -- wednesday_Weekday : Weekday ;
-    wednesday_Weekday = ss "Wednesday" ;
+    wednesday_Weekday = ss "" ;
     -- thursday_Weekday : Weekday ;
-    thursday_Weekday = ss "Thursday" ;
+    thursday_Weekday = ss "" ;
     -- friday_Weekday : Weekday ;
-    friday_Weekday = ss "Friday" ;
+    friday_Weekday = ss "" ;
     -- saturday_Weekday : Weekday ;
-    saturday_Weekday = ss "Saturday" ;
+    saturday_Weekday = ss "" ;
     -- sunday_Weekday : Weekday ;
-    sunday_Weekday = ss "Sunday" ;
+    sunday_Weekday = ss "" ;
 
     -- january_Month : Month ;
-    january_Month = ss "January" ;
+    january_Month = ss "" ;
     -- february_Month : Month ;
-    february_Month = ss "February" ;
+    february_Month = ss "" ;
     -- march_Month : Month ;
-    march_Month = ss "March" ;
+    march_Month = ss "" ;
     -- april_Month : Month ;
-    april_Month = ss "April" ;
+    april_Month = ss "" ;
     -- may_Month : Month ;
-    may_Month = ss "May" ;
+    may_Month = ss "" ;
     -- june_Month : Month ;
-    june_Month = ss "June" ;
+    june_Month = ss "" ;
     -- july_Month : Month ;
-    july_Month = ss "July" ;
+    july_Month = ss "" ;
     -- august_Month : Month ;
-    august_Month = ss "August" ;
+    august_Month = ss "" ;
     -- september_Month : Month ;
-    september_Month = ss "September" ;
+    september_Month = ss "" ;
     -- october_Month : Month ;
-    october_Month = ss "October" ;
+    october_Month = ss "" ;
     -- november_Month : Month ;
-    november_Month = ss "November" ;
+    november_Month = ss "" ;
     -- december_Month : Month ;
-    december_Month = ss "December" ;
+    december_Month = ss "" ;
 
 
     -- afrikaans_Language : Language ;
-    afrikaans_Language = ss "Afrikaans" ;
+    afrikaans_Language = ss "" ;
     -- amharic_Language : Language ;
-    amharic_Language = ss "Amharic" ;
+    amharic_Language = ss "" ;
     -- arabic_Language : Language ;
-    arabic_Language = ss "Arabic" ;
+    arabic_Language = ss "" ;
     -- bulgarian_Language : Language ;
-    bulgarian_Language = ss "Bulgarian" ;
+    bulgarian_Language = ss "" ;
     -- catalan_Language : Language ;
-    catalan_Language = ss "Catalan" ;
+    catalan_Language = ss "" ;
     -- chinese_Language : Language ;
-    chinese_Language = ss "Chinese" ;
+    chinese_Language = ss "" ;
     -- danish_Language : Language ;
-    danish_Language = ss "Danish" ;
+    danish_Language = ss "" ;
     -- dutch_Language : Language ;
-    dutch_Language = ss "Dutch" ;
+    dutch_Language = ss "" ;
     -- english_Language : Language ;
-    english_Language = ss "English" ;
+    english_Language = ss "" ;
     -- estonian_Language : Language ;
-    estonian_Language = ss "Estonian" ;
+    estonian_Language = ss "" ;
     -- finnish_Language : Language ;
-    finnish_Language = ss "Finnish" ;
+    finnish_Language = ss "" ;
     -- french_Language : Language ;
-    french_Language = ss "Frenche" ;
+    french_Language = ss "" ;
     -- german_Language : Language ;
-    german_Language = ss "German" ;
+    german_Language = ss "" ;
     -- greek_Language : Language ;
-    greek_Language = ss "Greek" ;
+    greek_Language = ss "" ;
     -- hebrew_Language : Language ;
-    hebrew_Language = ss "Hebrew" ;
+    hebrew_Language = ss "" ;
     -- hindi_Language : Language ;
-    hindi_Language = ss "Hindi" ;
+    hindi_Language = ss "" ;
     -- japanese_Language : Language ;
-    japanese_Language = ss "Japanese" ;
+    japanese_Language = ss "" ;
     -- italian_Language : Language ;
-    italian_Language = ss "Italian" ;
+    italian_Language = ss "" ;
     -- latin_Language : Language ;
-    latin_Language = ss "Latin" ;
+    latin_Language = ss "" ;
     -- latvian_Language : Language ;
-    latvian_Language = ss "Latvian" ;
+    latvian_Language = ss "" ;
     -- maltese_Language : Language ;
-    maltese_Language = ss "Maltese" ;
+    maltese_Language = ss "" ;
     -- nepali_Language : Language ;
-    nepali_Language = ss "Nepali" ;
+    nepali_Language = ss "" ;
     -- norwegian_Language : Language ;
-    norwegian_Language = ss "Norwegian" ;
+    norwegian_Language = ss "" ;
     -- persian_Language : Language ;
-    persian_Language = ss "Persian" ;
+    persian_Language = ss "" ;
     -- polish_Language : Language ;
-    polish_Language = ss "Polish" ;
+    polish_Language = ss "" ;
     -- punjabi_Language : Language ;
-    punjabi_Language = ss "Punjabi" ;
+    punjabi_Language = ss "" ;
     -- romanian_Language : Language ;
-    romanian_Language = ss "Romanian" ;
+    romanian_Language = ss "" ;
     -- russian_Language : Language ;
-    russian_Language = ss "Russian" ;
+    russian_Language = ss "" ;
     -- sindhi_Language : Language ;
-    sindhi_Language = ss "Sindhi" ;
+    sindhi_Language = ss "" ;
     -- spanish_Language : Language ;
-    spanish_Language = ss "Spanish" ;
+    spanish_Language = ss "" ;
     -- swahili_Language : Language ;
-    swahili_Language = ss "Swahili" ;
+    swahili_Language = ss "" ;
     -- swedish_Language : Language ;
-    swedish_Language = ss "Swedish" ;
+    swedish_Language = ss "" ;
     -- thai_Language : Language ;
-    thai_Language = ss "Thai" ;
+    thai_Language = ss "" ;
     -- turkish_Language : Language ;
-    turkish_Language = ss "Turkish" ;
+    turkish_Language = ss "" ;
     -- urdu_Language : Language ;
-    urdu_Language = ss "Urdu" ;
+    urdu_Language = ss "" ;
    
 }

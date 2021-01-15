@@ -107,5 +107,5 @@ concrete VerbXXX of Verb = CatXXX ** open Prelude in{
 -- Copula alone
 
     -- UseCopula : VP ;                    -- be
-    UseCopula = ss "be" ;
+    UseCopula = ss "" ;
 }

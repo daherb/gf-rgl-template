@@ -31,23 +31,23 @@ concrete NumeralXXX of Numeral = CatXXX [Numeral,Digits] ** open Prelude in {
     num = id SS ;
     
     -- n2, n3, n4, n5, n6, n7, n8, n9 : Digit ;
-    n2 = ss "two" ;
-    n3 = ss "three" ;
-    n4 = ss "four" ;
-    n5 = ss "five" ;
-    n6 = ss "six" ;
-    n7 = ss "seven" ;
-    n8 = ss "eight" ;
-    n9 = ss "nine" ;
+    n2 = ss "" ;
+    n3 = ss "" ;
+    n4 = ss "" ;
+    n5 = ss "" ;
+    n6 = ss "" ;
+    n7 = ss "" ;
+    n8 = ss "" ;
+    n9 = ss "" ;
     
     -- pot01 : Sub10 ;                               -- 1
-    pot01 = ss "one" ;
+    pot01 = ss "" ;
     -- pot0 : Digit -> Sub10 ;                       -- d * 1
     pot0 = id SS ;
     -- pot110 : Sub100 ;                             -- 10
-    pot110 = ss "ten" ;
+    pot110 = ss "" ;
     -- pot111 : Sub100 ;                             -- 11
-    pot111 = ss "eleven" ;
+    pot111 = ss "" ;
     -- pot1to19 : Digit -> Sub100 ;                  -- 10 + d
     pot1to19 = id SS ;
     -- pot0as1 : Sub10 -> Sub100 ;                   -- coercion of 1..9
@@ -81,15 +81,15 @@ concrete NumeralXXX of Numeral = CatXXX [Numeral,Digits] ** open Prelude in {
     IIDig = cc2 ;
     
     -- D_0, D_1, D_2, D_3, D_4, D_5, D_6, D_7, D_8, D_9 : Dig ;
-    D_0 = ss "0" ;
-    D_1 = ss "1" ;
-    D_2 = ss "2" ;
-    D_3 = ss "3" ;
-    D_4 = ss "4" ;
-    D_5 = ss "5" ;
-    D_6 = ss "6" ;
-    D_7 = ss "7" ;
-    D_8 = ss "8" ;
-    D_9 = ss "9" ;
+    D_0 = ss "" ;
+    D_1 = ss "" ;
+    D_2 = ss "" ;
+    D_3 = ss "" ;
+    D_4 = ss "" ;
+    D_5 = ss "" ;
+    D_6 = ss "" ;
+    D_7 = ss "" ;
+    D_8 = ss "" ;
+    D_9 = ss "" ;
     
 }
