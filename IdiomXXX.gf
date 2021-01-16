@@ -8,43 +8,43 @@ concrete IdiomXXX of Idiom = CatXXX ** open Prelude in {
   lin 
 
     -- ImpersCl  : VP -> Cl ;        -- it is hot
-    ImpersCl = id SS ;
+  ImpersCl = notYet "ImpersCl" ; 
     -- GenericCl : VP -> Cl ;        -- one sleeps
-    GenericCl = id SS ;
+  GenericCl = notYet "GenericCl" ; 
     
     -- CleftNP   : NP  -> RS -> Cl ; -- it is I who did it
-    CleftNP = cc2 ; 
+  CleftNP = notYet "CleftNP" ;  
     -- CleftAdv  : Adv -> S  -> Cl ; -- it is here she slept
-    CleftAdv = cc2 ;
+  CleftAdv = notYet "CleftAdv" ; 
     
     -- ExistNP   : NP -> Cl ;        -- there is a house
-    ExistNP = id SS ;
+  ExistNP = notYet "ExistNP" ; 
     -- ExistIP   : IP -> QCl ;       -- which houses are there
-    ExistIP = id SS ;
+  ExistIP = notYet "ExistIP" ; 
     
 -- 7/12/2012 generalizations of these
 
     -- ExistNPAdv : NP -> Adv -> Cl ;    -- there is a house in Paris
-    ExistNPAdv = cc2 ;
+  ExistNPAdv = notYet "ExistNPAdv" ; 
     -- ExistIPAdv : IP -> Adv -> QCl ;   -- which houses are there in Paris
-    ExistIPAdv = cc2 ;
+  ExistIPAdv = notYet "ExistIPAdv" ; 
     
     -- ProgrVP   : VP -> VP ;        -- be sleeping
-    ProgrVP = id SS ;
+  ProgrVP = notYet "ProgrVP" ; 
     
     -- ImpPl1    : VP -> Utt ;       -- let's go
-    ImpPl1 = id SS ;
+  ImpPl1 = notYet "ImpPl1" ; 
     
     -- ImpP3     : NP -> VP -> Utt ; -- let John walk
-    ImpP3 = cc2 ;
+  ImpP3 = notYet "ImpP3" ; 
     
 -- 3/12/2013 non-reflexive uses of "self"
 
     -- SelfAdvVP : VP -> VP ;        -- is at home himself
     SelfAdvVP = id SS;
     -- SelfAdVVP : VP -> VP ;        -- is himself at home
-    SelfAdVVP = id SS ;
+  SelfAdVVP = notYet "SelfAdVVP" ; 
     -- SelfNP    : NP -> NP ;        -- the president himself (is at home)
-    SelfNP = id SS ;
+  SelfNP = notYet "SelfNP" ; 
 
 }

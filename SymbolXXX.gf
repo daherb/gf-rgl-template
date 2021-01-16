@@ -10,28 +10,28 @@ concrete SymbolXXX of Symbol = CatXXX, PredefAbs, Prelude ** {
   lin
 
     -- SymbPN   : Symb -> PN ;                -- x
-    SymbPN = id SS ;
+  SymbPN = notYet "SymbPN" ; 
     -- IntPN    : Int -> PN ;                 -- 27
-    IntPN = id SS ;
+  IntPN = notYet "IntPN" ; 
     -- FloatPN  : Float -> PN ;               -- 3.14159
-    FloatPN = id SS ;
+  FloatPN = notYet "FloatPN" ; 
     -- NumPN    : Card -> PN ;                -- twelve [as proper name]
-    NumPN = id SS ;
+  NumPN = notYet "NumPN" ; 
     -- CNNumNP  : CN -> Card -> NP ;          -- level five ; level 5
-    CNNumNP = cc2 ;
+  CNNumNP = notYet "CNNumNP" ; 
     -- CNSymbNP : Det -> CN -> [Symb] -> NP ; -- (the) (2) numbers x and y
-    CNSymbNP = cc3 ;
+  CNSymbNP = notYet "CNSymbNP" ; 
 
 --2 Sentence consisting of a formula
 
     -- SymbS    : Symb -> S ;                 -- A
-    SymbS = id SS ;
+  SymbS = notYet "SymbS" ; 
 --2 Symbols as numerals
 
     -- SymbNum  : Symb -> Card ;              -- n
-    SymbNum = id SS ;
+  SymbNum = notYet "SymbNum" ; 
     -- SymbOrd  : Symb -> Ord ;               -- n'th
-    SymbOrd = id SS ;
+  SymbOrd = notYet "SymbOrd" ; 
     
 --2 Symbol lists
 
@@ -45,15 +45,15 @@ concrete SymbolXXX of Symbol = CatXXX, PredefAbs, Prelude ** {
 
   lin
     -- MkSymb : String -> Symb ;     -- foo [making a symbol from a string]
-    MkSymb = id SS ;
+  MkSymb = notYet "MkSymb" ; 
 
     -- BaseSymb : Symb -> Symb -> ListSymb ;
-    BaseSymb = cc2 ;
+  BaseSymb = notYet "BaseSymb" ; 
     -- ConsSymb : Symb -> ListSymb -> ListSynm
-    ConsSymb = cc2 ;
+  ConsSymb = notYet "ConsSymb" ; 
     
 --2 Obsolescent
     
     -- CNIntNP  : CN -> Int -> NP ;           -- level 53 (covered by CNNumNP)
-    CNIntNP = cc2 ;
+  CNIntNP = notYet "CNIntNP" ; 
 }

@@ -11,14 +11,14 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 
   lin
     -- PredVP    : NP -> VP -> Cl ;         -- John walks
-    PredVP = cc2 ;
+  PredVP = notYet "PredVP" ; 
     
 -- Using an embedded sentence as a subject is treated separately.
 -- This can be overgenerating. E.g. "whether you go" as subject
 -- is only meaningful for some verb phrases.
 
     -- PredSCVP  : SC -> VP -> Cl ;         -- that she goes is good
-    PredSCVP = cc2 ;
+  PredSCVP = notYet "PredSCVP" ; 
     
 --2 Clauses missing object noun phrases
 
@@ -31,13 +31,13 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 -- *Note* the set is not complete and lacks e.g. verbs with more than 2 places.
 
     -- SlashVP   : NP -> VPSlash -> ClSlash ;      -- (whom) he sees
-    SlashVP = cc2 ;
+  SlashVP = notYet "SlashVP" ; 
     -- AdvSlash  : ClSlash -> Adv -> ClSlash ;     -- (whom) he sees today
-    AdvSlash = cc2 ;
+  AdvSlash = notYet "AdvSlash" ; 
     -- SlashPrep : Cl -> Prep -> ClSlash ;         -- (with whom) he walks
-    SlashPrep = cc2 ;
+  SlashPrep = notYet "SlashPrep" ; 
     -- SlashVS   : NP -> VS -> SSlash -> ClSlash ; -- (whom) she says that he loves
-    SlashVS = cc3 ;
+  SlashVS = notYet "SlashVS" ; 
     
 --2 Imperatives
 
@@ -46,7 +46,7 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 -- To fix these parameters, see [Phrase Phrase.html].
 
     -- ImpVP     : VP -> Imp ;              -- love yourselves
-    ImpVP = id SS ;
+  ImpVP = notYet "ImpVP" ; 
     
 --2 Embedded sentences
 
@@ -54,11 +54,11 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 -- subjects and (adverbial) complements.
 
     -- EmbedS    : S  -> SC ;               -- that she goes
-    EmbedS = id SS ;
+  EmbedS = notYet "EmbedS" ; 
     -- EmbedQS   : QS -> SC ;               -- who goes
-    EmbedQS = id SS ;
+  EmbedQS = notYet "EmbedQS" ; 
     -- EmbedVP   : VP -> SC ;               -- to go
-    EmbedVP = id SS ;
+  EmbedVP = notYet "EmbedVP" ; 
 
 --2 Sentences
 
@@ -67,31 +67,31 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 -- anteriority, which are defined in [``Common`` Common.html].
 
     -- UseCl    : Temp -> Pol -> Cl  -> S ;   -- she had not slept
-    UseCl = cc3 ;
+  UseCl = notYet "UseCl" ; 
     -- UseQCl   : Temp -> Pol -> QCl -> QS ;  -- who had not slept
-    UseQCl = cc3 ;
+  UseQCl = notYet "UseQCl" ; 
     -- UseRCl   : Temp -> Pol -> RCl -> RS ;  -- that had not slept
-    UseRCl = cc3 ;
+  UseRCl = notYet "UseRCl" ; 
     -- UseSlash : Temp -> Pol -> ClSlash -> SSlash ; -- (that) she had not seen
-    UseSlash = cc3 ;
+  UseSlash = notYet "UseSlash" ; 
 
 -- An adverb can be added to the beginning of a sentence, either with comma ("externally")
 -- or without:
 
     -- AdvS     : Adv -> S  -> S ;            -- then I will go home
-    AdvS = cc2 ;
+  AdvS = notYet "AdvS" ; 
     -- ExtAdvS  : Adv -> S  -> S ;            -- next week, I will go home
-    ExtAdvS = cc2 ;
+  ExtAdvS = notYet "ExtAdvS" ; 
 
 -- This covers subjunctive clauses, but they can also be added to the end.
 
     -- SSubjS    : S -> Subj -> S -> S ;       -- I go home, if she comes
-    SSubjS = cc3 ;
+  SSubjS = notYet "SSubjS" ; 
     
 -- A sentence can be modified by a relative clause referring to its contents.
 
     -- RelS     : S -> RS -> S ;              -- she sleeps, which is good
-    RelS = cc2 ;
+  RelS = notYet "RelS" ; 
     
 ---- A sentence can also be post-modified by a subjunct sentence.
 

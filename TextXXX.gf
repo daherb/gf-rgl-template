@@ -12,12 +12,12 @@ concrete TextXXX of Text = CommonX ** open Prelude in {
   lin
     
     -- TEmpty     : Text ;                 -- [empty text, no sentences]
-    TEmpty = ss "" ;
+  TEmpty = notYet "TEmpty" ; 
     -- TFullStop  : Phr -> Text -> Text ;  -- John walks. ...
-    TFullStop = cc2 ;
+  TFullStop = notYet "TFullStop" ; 
     -- TQuestMark : Phr -> Text -> Text ;  -- Are they here? ...
-    TQuestMark = cc2 ;
+  TQuestMark = notYet "TQuestMark" ; 
     -- TExclMark  : Phr -> Text -> Text ;  -- Let's go! ...
-    TExclMark = cc2 ;
+  TExclMark = notYet "TExclMark" ; 
 }
 -}

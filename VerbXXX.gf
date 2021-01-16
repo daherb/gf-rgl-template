@@ -11,39 +11,39 @@ concrete VerbXXX of Verb = CatXXX ** open Prelude in{
 
   lin
     -- UseV     : V   -> VP ;        -- sleep
-    UseV = id SS ;
+  UseV = notYet "UseV" ; 
     
     -- ComplVV  : VV  -> VP -> VP ;  -- want to run
-    ComplVV = cc2 ;
+  ComplVV = notYet "ComplVV" ; 
     -- ComplVS  : VS  -> S  -> VP ;  -- say that she runs
-    ComplVS = cc2 ;
+  ComplVS = notYet "ComplVS" ; 
     -- ComplVQ  : VQ  -> QS -> VP ;  -- wonder who runs
-    ComplVQ = cc2 ;
+  ComplVQ = notYet "ComplVQ" ; 
     -- ComplVA  : VA  -> AP -> VP ;  -- they become red
-    ComplVA = cc2 ;
+  ComplVA = notYet "ComplVA" ; 
     
     -- SlashV2a : V2        -> VPSlash ;  -- love (it)
-    SlashV2a = id SS ;
+  SlashV2a = notYet "SlashV2a" ; 
     -- Slash2V3 : V3  -> NP -> VPSlash ;  -- give it (to her)
-    Slash2V3 = cc2 ;
+  Slash2V3 = notYet "Slash2V3" ; 
     -- Slash3V3 : V3  -> NP -> VPSlash ;  -- give (it) to her
-    Slash3V3 = cc2 ;
+  Slash3V3 = notYet "Slash3V3" ; 
     
     -- SlashV2V : V2V -> VP -> VPSlash ;  -- beg (her) to go
-    SlashV2V = cc2 ;
+  SlashV2V = notYet "SlashV2V" ; 
     -- SlashV2S : V2S -> S  -> VPSlash ;  -- answer (to him) that it is good
-    SlashV2S = cc2 ;
+  SlashV2S = notYet "SlashV2S" ; 
     -- SlashV2Q : V2Q -> QS -> VPSlash ;  -- ask (him) who came
-    SlashV2Q = cc2 ;
+  SlashV2Q = notYet "SlashV2Q" ; 
     -- SlashV2A : V2A -> AP -> VPSlash ;  -- paint (it) red
-    SlashV2A = cc2 ;
+  SlashV2A = notYet "SlashV2A" ; 
     -- ComplSlash : VPSlash -> NP -> VP ; -- love it
-    ComplSlash = cc2 ;
+  ComplSlash = notYet "ComplSlash" ; 
     
     -- SlashVV    : VV  -> VPSlash -> VPSlash ;       -- want to buy
-    SlashVV = cc2 ;
+  SlashVV = notYet "SlashVV" ; 
     -- SlashV2VNP : V2V -> NP -> VPSlash -> VPSlash ; -- beg me to buy
-    SlashV2VNP = cc3 ;
+  SlashV2VNP = notYet "SlashV2VNP" ; 
     
 --2 Other ways of forming verb phrases
 
@@ -51,9 +51,9 @@ concrete VerbXXX of Verb = CatXXX ** open Prelude in{
 -- copula-preceded complements.
 
     -- ReflVP   : VPSlash -> VP ;         -- love himself
-    ReflVP = id SS ;
+  ReflVP = notYet "ReflVP" ; 
     -- UseComp  : Comp -> VP ;            -- be warm
-    UseComp = id SS ;
+  UseComp = notYet "UseComp" ; 
     
 -- Passivization of two-place verbs is another way to use
 -- them. In many languages, the result is a participle that
@@ -66,26 +66,26 @@ concrete VerbXXX of Verb = CatXXX ** open Prelude in{
 -- take a direct object.
 
     -- PassV2   : V2 -> VP ;               -- be loved
-    PassV2 = id SS ;
+  PassV2 = notYet "PassV2" ; 
     
 -- Adverbs can be added to verb phrases. Many languages make
 -- a distinction between adverbs that are attached in the end
 -- vs. next to (or before) the verb.
 
     -- AdvVP    : VP -> Adv -> VP ;        -- sleep here
-    AdvVP = cc2 ;
+  AdvVP = notYet "AdvVP" ; 
     -- ExtAdvVP : VP -> Adv -> VP ;        -- sleep , even though ...
-    ExtAdvVP = cc2 ;
+  ExtAdvVP = notYet "ExtAdvVP" ; 
     -- AdVVP    : AdV -> VP -> VP ;        -- always sleep
-    AdVVP = cc2 ;
+  AdVVP = notYet "AdVVP" ; 
     
     -- AdvVPSlash : VPSlash -> Adv -> VPSlash ;  -- use (it) here
-    AdvVPSlash = cc2 ;
+  AdvVPSlash = notYet "AdvVPSlash" ; 
     -- AdVVPSlash : AdV -> VPSlash -> VPSlash ;  -- always use (it)
-    AdVVPSlash = cc2 ;
+  AdVVPSlash = notYet "AdVVPSlash" ; 
     
     -- VPSlashPrep : VP -> Prep -> VPSlash ;  -- live in (it)
-    VPSlashPrep = cc2 ;
+  VPSlashPrep = notYet "VPSlashPrep" ; 
 
 -- *Agents of passives* are constructed as adverbs with the
 -- preposition [Structural Structural.html]$.8agent_Prep$.
@@ -96,16 +96,16 @@ concrete VerbXXX of Verb = CatXXX ** open Prelude in{
 -- Adjectival phrases, noun phrases, and adverbs can be used.
 
     -- CompAP   : AP  -> Comp ;            -- (be) small
-    CompAP = id SS ;
+  CompAP = notYet "CompAP" ; 
     -- CompNP   : NP  -> Comp ;            -- (be) the man
-    CompNP = id SS ;
+  CompNP = notYet "CompNP" ; 
     -- CompAdv  : Adv -> Comp ;            -- (be) here
-    CompAdv = id SS ; 
+  CompAdv = notYet "CompAdv" ;  
     -- CompCN   : CN  -> Comp ;            -- (be) a man/men
-    CompCN = id SS ;
+  CompCN = notYet "CompCN" ; 
     
 -- Copula alone
 
     -- UseCopula : VP ;                    -- be
-    UseCopula = ss "be" ;
+  UseCopula = notYet "UseCopula" ; 
 }

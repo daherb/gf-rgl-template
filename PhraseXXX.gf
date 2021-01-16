@@ -9,19 +9,19 @@ concrete PhraseXXX of Phrase = CatXXX ** open Prelude in {
   lin
     
     -- PhrUtt   : PConj -> Utt -> Voc -> Phr ; -- but come here, my friend
-    PhrUtt = cc3 ;
+  PhrUtt = notYet "PhrUtt" ; 
 -- Utterances are formed from sentences, questions, and imperatives.
 
     -- UttS      : S   -> Utt ;                -- John walks
-    UttS = id SS ;
+  UttS = notYet "UttS" ; 
     -- UttQS     : QS  -> Utt ;                -- is it good
-    UttQS = id SS ;
+  UttQS = notYet "UttQS" ; 
     -- UttImpSg  : Pol -> Imp -> Utt ;         -- (don't) love yourself
-    UttImpSg = cc2 ;
+  UttImpSg = notYet "UttImpSg" ; 
     -- UttImpPl  : Pol -> Imp -> Utt ;         -- (don't) love yourselves
-    UttImpPl = cc2 ;
+  UttImpPl = notYet "UttImpPl" ; 
     -- UttImpPol : Pol -> Imp -> Utt ;         -- (don't) sleep (polite)
-    UttImpPol = cc2 ;
+  UttImpPol = notYet "UttImpPol" ; 
 
 -- There are also 'one-word utterances'. A typical use of them is
 -- as answers to questions.
@@ -30,37 +30,37 @@ concrete PhraseXXX of Phrase = CatXXX ** open Prelude in {
 -- can be used.
 
     -- UttIP     : IP   -> Utt ;               -- who
-    UttIP = id SS ;
+  UttIP = notYet "UttIP" ; 
     -- UttIAdv   : IAdv -> Utt ;               -- why
-    UttIAdv = id SS ;
+  UttIAdv = notYet "UttIAdv" ; 
     -- UttNP     : NP   -> Utt ;               -- this man
-    UttNP = id SS ;
+  UttNP = notYet "UttNP" ; 
     -- UttAdv    : Adv  -> Utt ;               -- here
-    UttAdv = id SS ;
+  UttAdv = notYet "UttAdv" ; 
     -- UttVP     : VP   -> Utt ;               -- to sleep
-    UttVP = id SS ;
+  UttVP = notYet "UttVP" ; 
     -- UttCN     : CN   -> Utt ;               -- house
-    UttCN = id SS ;
+  UttCN = notYet "UttCN" ; 
     -- UttCard   : Card -> Utt ;               -- five
-    UttCard = id SS ;
+  UttCard = notYet "UttCard" ; 
     -- UttAP     : AP   -> Utt ;               -- fine
-    UttAP = id SS ;
+  UttAP = notYet "UttAP" ; 
     -- UttInterj : Interj -> Utt ;             -- alas
-    UttInterj = id SS ;
+  UttInterj = notYet "UttInterj" ; 
 
 -- The phrasal conjunction is optional. A sentence conjunction
 -- can also be used to prefix an utterance.
 
     -- NoPConj   : PConj ;                     -- [plain phrase without conjunction in front]
-    NoPConj = ss "" ;
+  NoPConj = notYet "NoPConj" ; 
     -- PConjConj : Conj -> PConj ;             -- and
-    PConjConj = id SS ;
+  PConjConj = notYet "PConjConj" ; 
 
 -- The vocative is optional. Any noun phrase can be made into vocative,
 -- which may be overgenerating (e.g. "I").
 
     -- NoVoc   : Voc ;                         -- [plain phrase without vocative]
-    NoVoc = ss "" ;
+  NoVoc = notYet "NoVoc" ; 
     -- VocNP   : NP -> Voc ;                   -- my friend
-    VocNP = id SS ;
+  VocNP = notYet "VocNP" ; 
 }

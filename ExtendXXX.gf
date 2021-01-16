@@ -18,28 +18,28 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
   lin
     
     -- GenNP       : NP -> Quant ;       -- this man's
-    GenNP = id SS ;
+  GenNP = notYet "GenNP" ; 
     -- GenIP       : IP -> IQuant ;      -- whose
-    GenIP = id SS ;
+  GenIP = notYet "GenIP" ; 
     -- GenRP       : Num -> CN -> RP ;   -- whose car
-    GenRP = cc2 ;
+  GenRP = notYet "GenRP" ; 
     
 -- In case the first two are not available, the following applications should in any case be.
 
     -- GenModNP    : Num -> NP -> CN -> NP ; -- this man's car(s)
-    GenModNP = cc3 ;
+  GenModNP = notYet "GenModNP" ; 
     -- GenModIP    : Num -> IP -> CN -> IP ; -- whose car(s)
-    GenModIP = cc3;
+  GenModIP = notYet "GenModIP;
     
     -- CompBareCN  : CN -> Comp ;        -- (is) teacher
-    CompBareCN = id SS ;
+  CompBareCN = notYet "CompBareCN" ; 
     
     -- StrandQuestSlash : IP -> ClSlash -> QCl ;   -- whom does John live with
-    StrandQuestSlash = cc2;
+    StrandQuestSlash = notYet "StrandQuestSlash";
     -- StrandRelSlash   : RP -> ClSlash -> RCl ;   -- that he lives in
-    StrandRelSlash = cc2 ;
+  StrandRelSlash = notYet "StrandRelSlash" ; 
     -- EmptyRelSlash    : ClSlash       -> RCl ;   -- he lives in
-    EmptyRelSlash = id SS ;
+  EmptyRelSlash = notYet "EmptyRelSlash" ; 
 
 -- $VP$ conjunction, separate categories for finite and infinitive forms (VPS and VPI, respectively)
 -- covering both in the same category leads to spurious VPI parses because VPS depends on many more tenses
@@ -52,40 +52,40 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
 
   lin
     -- BaseVPS    : VPS -> VPS -> ListVPS ;
-    BaseVPS = cc2 ;
+  BaseVPS = notYet "BaseVPS" ; 
     -- ConsVPS    : VPS -> ListVPS -> ListVPS ;
-    ConsVPS = cc2 ;
+  ConsVPS = notYet "ConsVPS" ; 
 
     -- MkVPS      : Temp -> Pol -> VP -> VPS ;  -- hasn't slept
-    MkVPS = cc3 ;
+  MkVPS = notYet "MkVPS" ; 
     -- ConjVPS    : Conj -> [VPS] -> VPS ;      -- has walked and won't sleep
-    ConjVPS = cc2 ;
+  ConjVPS = notYet "ConjVPS" ; 
     -- PredVPS    : NP   -> VPS -> S ;          -- she [has walked and won't sleep]
-    PredVPS = cc2 ;
+  PredVPS = notYet "PredVPS" ; 
     -- SQuestVPS  : NP   -> VPS -> QS ;         -- has she walked
-    SQuestVPS = cc2 ;
+  SQuestVPS = notYet "SQuestVPS" ; 
     -- QuestVPS   : IP   -> VPS -> QS ;         -- who has walked
-    QuestVPS = cc2 ;
+  QuestVPS = notYet "QuestVPS" ; 
     
 -- existentials that work in the absence of Cl
     -- ExistS     : Temp -> Pol -> NP -> S ;    -- there was a party
-    ExistS = cc3 ;
+  ExistS = notYet "ExistS" ; 
     -- ExistNPQS  : Temp -> Pol -> NP -> QS ;   -- was there a party
-    ExistNPQS = cc3 ;
+  ExistNPQS = notYet "ExistNPQS" ; 
     -- ExistIPQS  : Temp -> Pol -> IP -> QS ;   -- what was there
-    ExistIPQS = cc3 ;
+  ExistIPQS = notYet "ExistIPQS" ; 
 
     -- BaseVPI    : VPI -> VPI -> ListVPI ;
-    BaseVPI = cc2 ;
+  BaseVPI = notYet "BaseVPI" ; 
     -- ConsVPI    : VPI -> ListVPI -> ListVPI ;
-    ConsVPI = cc2 ;
+  ConsVPI = notYet "ConsVPI" ; 
     
     -- MkVPI      : VP -> VPI ;                 -- to sleep (TODO: Ant and Pol)
-    MkVPI = id SS ;
+  MkVPI = notYet "MkVPI" ; 
     -- ConjVPI    : Conj -> [VPI] -> VPI ;      -- to sleep and to walk
-    ConjVPI = cc2 ;
+  ConjVPI = notYet "ConjVPI" ; 
     -- ComplVPIVV : VV   -> VPI -> VP ;         -- must sleep and walk
-    ComplVPIVV = cc2 ;
+  ComplVPIVV = notYet "ComplVPIVV" ; 
     
 -- the same for VPSlash, taking a complement with shared V2 verbs
 
@@ -97,153 +97,153 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
 
   lin
     -- BaseVPS2    : VPS2 -> VPS2 -> ListVPS2 ;
-    BaseVPS2 = cc2 ;
+  BaseVPS2 = notYet "BaseVPS2" ; 
     -- ConsVPS2    : VPS2 -> ListVPS2 -> ListVPS2 ;
-    ConsVPS2 = cc2 ;
+  ConsVPS2 = notYet "ConsVPS2" ; 
     
     -- MkVPS2    : Temp -> Pol -> VPSlash -> VPS2 ;  -- has loved
-    MkVPS2 = cc3 ;
+  MkVPS2 = notYet "MkVPS2" ; 
     -- ConjVPS2  : Conj -> [VPS2] -> VPS2 ;          -- has loved and now hates
-    ConjVPS2 = cc2 ;
+  ConjVPS2 = notYet "ConjVPS2" ; 
     -- ComplVPS2 : VPS2 -> NP -> VPS ;               -- has loved and now hates that person
-    ComplVPS2 = cc2 ;
+  ComplVPS2 = notYet "ComplVPS2" ; 
 
     -- BaseVPI2  : VPI2 -> VPI2 -> ListVPI2 ;
-    BaseVPI2 = cc2 ;
+  BaseVPI2 = notYet "BaseVPI2" ; 
     -- ConsVPI2  : VPI2 -> ListVPI2 -> ListVPI2 ;
-    ConsVPI2 = cc2 ;
+  ConsVPI2 = notYet "ConsVPI2" ; 
     
     -- MkVPI2    : VPSlash -> VPI2 ;                 -- to love
-    MkVPI2 = id SS ;
+  MkVPI2 = notYet "MkVPI2" ; 
     -- ConjVPI2  : Conj -> [VPI2] -> VPI2 ;          -- to love and hate
-    ConjVPI2 = cc2 ;
+  ConjVPI2 = notYet "ConjVPI2" ; 
     -- ComplVPI2 : VPI2 -> NP -> VPI ;               -- to love and hate that person
-    ComplVPI2 = cc2 ;
+  ComplVPI2 = notYet "ComplVPI2" ; 
     
     -- ProDrop : Pron -> Pron ;  -- unstressed subject pronoun becomes empty: "am tired"
-    ProDrop = id SS ;
+  ProDrop = notYet "ProDrop" ; 
     
     -- ICompAP : AP -> IComp ;   -- "how old"
-    ICompAP = id SS ;
+  ICompAP = notYet "ICompAP" ; 
     -- IAdvAdv : Adv -> IAdv ;   -- "how often"
-    IAdvAdv = id SS ;
+  IAdvAdv = notYet "IAdvAdv" ; 
     
     -- CompIQuant : IQuant -> IComp ;   -- which (is it) [agreement to NP]
-    CompIQuant = id SS ;
+  CompIQuant = notYet "CompIQuant" ; 
 
     -- PrepCN     : Prep -> CN -> Adv ; -- by accident [Prep + CN without article]
-    PrepCN = cc2 ;
+  PrepCN = notYet "PrepCN" ; 
 
   -- fronted/focal constructions, only for main clauses
 
     -- FocusObj : NP  -> SSlash  -> Utt ;   -- her I love
-    FocusObj = cc2 ;
+  FocusObj = notYet "FocusObj" ; 
     -- FocusAdv : Adv -> S       -> Utt ;   -- today I will sleep
-    FocusAdv = cc2 ;
+  FocusAdv = notYet "FocusAdv" ; 
     -- FocusAdV : AdV -> S       -> Utt ;   -- never will I sleep
-    FocusAdV = cc2 ;
+  FocusAdV = notYet "FocusAdV" ; 
     -- FocusAP  : AP  -> NP      -> Utt ;   -- green was the tree
-    FocusAP = cc2 ;
+  FocusAP = notYet "FocusAP" ; 
 
   -- participle constructions
     -- PresPartAP    : VP -> AP ;   -- (the man) looking at Mary
-    PresPartAP = id SS ;
+  PresPartAP = notYet "PresPartAP" ; 
     -- EmbedPresPart : VP -> SC ;   -- looking at Mary (is fun)
-    EmbedPresPart = id SS ;
+  EmbedPresPart = notYet "EmbedPresPart" ; 
 
     -- PastPartAP      : VPSlash -> AP ;         -- lost (opportunity) ; (opportunity) lost in space
-    PastPartAP = id SS ;
+  PastPartAP = notYet "PastPartAP" ; 
     -- PastPartAgentAP : VPSlash -> NP -> AP ;   -- (opportunity) lost by the company
-    PastPartAgentAP = cc2 ;
+  PastPartAgentAP = notYet "PastPartAgentAP" ; 
 
 -- this is a generalization of Verb.PassV2 and should replace it in the future.
 
     -- PassVPSlash : VPSlash -> VP ; -- be forced to sleep
-    PassVPSlash = id SS ;
+  PassVPSlash = notYet "PassVPSlash" ; 
     
 -- the form with an agent may result in a different linearization
 -- from an adverbial modification by an agent phrase.
 
     -- PassAgentVPSlash : VPSlash -> NP -> VP ;  -- be begged by her to go
-    PassAgentVPSlash = cc2 ;
+  PassAgentVPSlash = notYet "PassAgentVPSlash" ; 
     
 -- publishing of the document
 
     -- NominalizeVPSlashNP : VPSlash -> NP -> NP ;
-    NominalizeVPSlashNP = cc2 ;
+  NominalizeVPSlashNP = notYet "NominalizeVPSlashNP" ; 
     
 -- counterpart to ProgrVP, for VPSlash
 
     -- ProgrVPSlash : VPSlash -> VPSlash;
-    ProgrVPSlash = id SS ;
+  ProgrVPSlash = notYet "ProgrVPSlash" ; 
     
 -- existential for mathematics
 
     -- ExistsNP : NP -> Cl ;  -- there exists a number / there exist numbers
-    ExistsNP = id SS ;
+  ExistsNP = notYet "ExistsNP" ; 
     
 -- existentials with a/no variation
 
     -- ExistCN       : CN -> Cl ;  -- there is a car / there is no car
-    ExistCN = id SS ;
+  ExistCN = notYet "ExistCN" ; 
     -- ExistMassCN   : CN -> Cl ;  -- there is beer / there is no beer
-    ExistMassCN = id SS ;
+  ExistMassCN = notYet "ExistMassCN" ; 
     -- ExistPluralCN : CN -> Cl ;  -- there are trees / there are no trees
-    ExistPluralCN = id SS ;
+  ExistPluralCN = notYet "ExistPluralCN" ; 
 
 -- generalisation of existential, with adverb as a parameter
     -- AdvIsNP : Adv -> NP -> Cl ;  -- here is the tree / here are the trees
-    AdvIsNP = cc2 ;
+  AdvIsNP = notYet "AdvIsNP" ; 
     -- AdvIsNPAP : Adv -> NP -> AP -> Cl ; -- here are the instructions documented
-    AdvIsNPAP = cc3 ;
+  AdvIsNPAP = notYet "AdvIsNPAP" ; 
     
 -- infinitive for purpose AR 21/8/2013
 
     -- PurposeVP : VP -> Adv ;  -- to become happy
-    PurposeVP = id SS ;
+  PurposeVP = notYet "PurposeVP" ; 
     
 -- object S without "that"
 
     -- ComplBareVS  : VS  -> S  -> VP ;       -- say she runs
-    ComplBareVS = cc2 ;
+  ComplBareVS = notYet "ComplBareVS" ; 
     -- SlashBareV2S : V2S -> S  -> VPSlash ;  -- answer (to him) it is good
-    SlashBareV2S = cc2 ;
+  SlashBareV2S = notYet "SlashBareV2S" ; 
     
     -- ComplDirectVS : VS -> Utt -> VP ;      -- say: "today"
-    ComplDirectVS = cc2 ;
+  ComplDirectVS = notYet "ComplDirectVS" ; 
     -- ComplDirectVQ : VQ -> Utt -> VP ;      -- ask: "when"
-    ComplDirectVQ = cc2 ;
+  ComplDirectVQ = notYet "ComplDirectVQ" ; 
 
 -- front the extraposed part
 
     -- FrontComplDirectVS : NP -> VS -> Utt -> Cl ;      -- "I am here", she said
-    FrontComplDirectVS = cc3 ;
+  FrontComplDirectVS = notYet "FrontComplDirectVS" ; 
     -- FrontComplDirectVQ : NP -> VQ -> Utt -> Cl ;      -- "where", she asked
-    FrontComplDirectVQ = cc3 ;
+  FrontComplDirectVQ = notYet "FrontComplDirectVQ" ; 
 
 -- proper structure of "it is AP to VP"
 
     -- PredAPVP : AP -> VP -> Cl ;      -- it is good to walk
-    PredAPVP = cc2 ;
+  PredAPVP = notYet "PredAPVP" ; 
 
 -- to use an AP as CN or NP without CN
 
     -- AdjAsCN : AP -> CN ;   -- a green one ; en grön (Swe)
-    AdjAsCN = id SS ;
+  AdjAsCN = notYet "AdjAsCN" ; 
     -- AdjAsNP : AP -> NP ;   -- green (is good)
-    AdjAsNP = id SS ;
+  AdjAsNP = notYet "AdjAsNP" ; 
     
 -- infinitive complement for IAdv
 
     -- PredIAdvVP : IAdv -> VP -> QCl ; -- how to walk?
-    PredIAdvVP = cc2 ;
+  PredIAdvVP = notYet "PredIAdvVP" ; 
 
 -- alternative to EmbedQS. For English, EmbedQS happens to work,
 -- because "what" introduces question and relative. The default linearization
 -- could be e.g. "the thing we did (was fun)".
 
     -- EmbedSSlash : SSlash -> SC  ;   -- what we did (was fun)
-    EmbedSSlash = id SS ;
+  EmbedSSlash = notYet "EmbedSSlash" ; 
 
 -- reflexive noun phrases: a generalization of Verb.ReflVP, which covers just reflexive pronouns
 -- This is necessary in languages like Swedish, which have special reflexive possessives.
@@ -257,78 +257,78 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
 
   lin
     -- ReflRNP : VPSlash -> RNP -> VP ;   -- love my family and myself
-    ReflRNP = cc2 ;
+  ReflRNP = notYet "ReflRNP" ; 
     
     -- ReflPron : RNP ;                   -- myself
-    ReflPron = ss "myself" ;
+  ReflPron = notYet "ReflPron" ; 
     
     -- ReflPoss : Num -> CN -> RNP ;      -- my car(s)
-    ReflPoss = cc2 ;
+  ReflPoss = notYet "ReflPoss" ; 
     
     -- PredetRNP : Predet -> RNP -> RNP ; -- all my brothers
-    PredetRNP = cc2 ;
+  PredetRNP = notYet "PredetRNP" ; 
     
     -- ConjRNP : Conj -> RNPList -> RNP ;  -- my family, John and myself
-    ConjRNP = cc2 ; 
+  ConjRNP = notYet "ConjRNP" ;  
 
     -- Base_rr_RNP : RNP -> RNP -> RNPList ;       -- my family, myself
-    Base_rr_RNP = cc2 ;
+  Base_rr_RNP = notYet "Base_rr_RNP" ; 
     -- Base_nr_RNP : NP  -> RNP -> RNPList ;       -- John, myself
-    Base_nr_RNP = cc2 ;
+  Base_nr_RNP = notYet "Base_nr_RNP" ; 
     -- Base_rn_RNP : RNP -> NP  -> RNPList ;       -- myself, John
-    Base_rn_RNP = cc2 ;
+  Base_rn_RNP = notYet "Base_rn_RNP" ; 
     -- Cons_rr_RNP : RNP -> RNPList -> RNPList ;   -- my family, myself, John
-    Cons_rr_RNP = cc2 ;
+  Cons_rr_RNP = notYet "Cons_rr_RNP" ; 
     -- Cons_nr_RNP : NP  -> RNPList -> RNPList ;   -- John, my family, myself
-    Cons_nr_RNP = cc2 ;
+  Cons_nr_RNP = notYet "Cons_nr_RNP" ; 
 ----    Cons_rn_RNP : RNP -> ListNP  -> RNPList ;   -- myself, John, Mary
 
 -- reflexive possessive on its own right, like in Swedish, Czech, Slovak
 
     -- ReflPossPron : Quant ;  -- Swe sin,sitt,sina
-    ReflPossPron = ss "" ;
+  ReflPossPron = notYet "ReflPossPron" ; 
     
 --- from Extensions
 
     -- ComplGenVV  : VV -> Ant -> Pol -> VP  -> VP ;         -- want not to have slept
-    ComplGenVV vv ant pol vp =  cc2 (cc3 vv ant pol) vp ;
+    ComplGenVV =  notYet "ComplGenVV" ;
 ----  SlashV2V    : V2V -> Ant -> Pol -> VPS -> VPSlash ;   -- force (her) not to have slept
 
     -- CompoundN   : N -> N  -> N ;      -- control system / controls system / control-system
-    CompoundN = cc2 ;
+  CompoundN = notYet "CompoundN" ; 
     -- CompoundAP  : N -> A  -> AP ;     -- language independent / language-independent
-    CompoundAP = cc2 ;
+  CompoundAP = notYet "CompoundAP" ; 
 
     -- GerundCN    : VP -> CN ;          -- publishing of the document (can get a determiner)
-    GerundCN = id SS ;
+  GerundCN = notYet "GerundCN" ; 
     -- GerundNP    : VP -> NP ;          -- publishing the document (by nature definite)
-    GerundNP = id SS ;
+  GerundNP = notYet "GerundNP" ; 
     -- GerundAdv   : VP -> Adv ;         -- publishing the document (prepositionless adverb)
-    GerundAdv = id SS ;
+  GerundAdv = notYet "GerundAdv" ; 
 
     -- WithoutVP   : VP -> Adv ;         -- without publishing the document
-    WithoutVP = id SS ;
+  WithoutVP = notYet "WithoutVP" ; 
     -- ByVP        : VP -> Adv ;         -- by publishing the document
-    ByVP = id SS ;
+  ByVP = notYet "ByVP" ; 
   -- InOrderToVP : VP -> Adv ;         -- (in order) to publish the document
-    InOrderToVP = id SS ;
+  InOrderToVP = notYet "InOrderToVP" ; 
     
   -- ApposNP : NP -> NP -> NP ;        -- Mr Macron, the president of France,
-    ApposNP = cc2 ;
+  ApposNP = notYet "ApposNP" ; 
     
     -- AdAdV       : AdA -> AdV -> AdV ;           -- almost always
-    AdAdV = cc2 ;
+  AdAdV = notYet "AdAdV" ; 
     -- UttAdV      : AdV -> Utt ;                  -- always(!)
-    UttAdV = id SS ;
+  UttAdV = notYet "UttAdV" ; 
   -- PositAdVAdj : A -> AdV ;                    -- (that she) positively (sleeps)
-    PositAdVAdj = id SS ;
+  PositAdVAdj = notYet "PositAdVAdj" ; 
     
     -- CompS       : S -> Comp ;                   -- (the fact is) that she sleeps
-    CompS = id SS ;
+  CompS = notYet "CompS" ; 
     -- CompQS      : QS -> Comp ;                  -- (the question is) who sleeps
-    CompQS = id SS ;
+  CompQS = notYet "CompQS" ; 
     -- CompVP      : Ant -> Pol -> VP -> Comp ;    -- (she is) to go
-    CompVP = cc3 ;
+  CompVP = notYet "CompVP" ; 
 
 -- very language-specific things
 
@@ -336,48 +336,48 @@ concrete ExtendXXX of Extend = CatXXX ** open Prelude,(P=ParamX) in {
     -- UncontractedNeg : Pol ;      -- do not, etc, as opposed to don't
     UncontractedNeg = { s = "do not" ; p = P.Neg } ;
     -- UttVPShort : VP -> Utt ;     -- have fun, as opposed to "to have fun"
-    UttVPShort = id SS ;
+  UttVPShort = notYet "UttVPShort" ; 
     -- ComplSlashPartLast : VPSlash -> NP -> VP ; -- set it apart, as opposed to "set apart it"
-    ComplSlashPartLast = cc2 ;
+  ComplSlashPartLast = notYet "ComplSlashPartLast" ; 
 
 -- Romance
     -- DetNPMasc : Det -> NP ;
-    DetNPMasc = id SS ;
+  DetNPMasc = notYet "DetNPMasc" ; 
     -- DetNPFem  : Det -> NP ;
-    DetNPFem = id SS ;
+  DetNPFem = notYet "DetNPFem" ; 
 
     -- UseComp_estar : Comp -> VP ; -- (Cat, Spa, Por) "está cheio" instead of "é cheio"
-    UseComp_estar = id SS ;
+  UseComp_estar = notYet "UseComp_estar" ; 
 
   -- SubjRelNP : NP -> RS -> NP ; -- Force RS in subjunctive: lo que les *resulte* mejor
-    SubjRelNP = cc2 ;
+  SubjRelNP = notYet "SubjRelNP" ; 
     
     -- iFem_Pron      : Pron ; -- I (Fem)
-    iFem_Pron = ss "i" ;
+  iFem_Pron = notYet "iFem_Pron" ; 
   -- youFem_Pron    : Pron ; -- you (Fem)
-    youFem_Pron = ss "you" ;
+  youFem_Pron = notYet "youFem_Pron" ; 
     -- weFem_Pron     : Pron ; -- we (Fem)
-    weFem_Pron = ss "we" ;
+  weFem_Pron = notYet "weFem_Pron" ; 
     -- youPlFem_Pron  : Pron ; -- you plural (Fem)
-    youPlFem_Pron = ss "you" ;
+  youPlFem_Pron = notYet "youPlFem_Pron" ; 
     -- theyFem_Pron   : Pron ; -- they (Fem)
-    theyFem_Pron = ss "they" ;
+  theyFem_Pron = notYet "theyFem_Pron" ; 
     -- youPolFem_Pron : Pron ; -- you polite (Fem)
-    youPolFem_Pron = ss "you" ;
+  youPolFem_Pron = notYet "youPolFem_Pron" ; 
     -- youPolPl_Pron  : Pron ; -- you polite plural (Masc)
-    youPolPl_Pron = ss "you" ;
+  youPolPl_Pron = notYet "youPolPl_Pron" ; 
     -- youPolPlFem_Pron : Pron ; -- you polite plural (Fem)
-    youPolPlFem_Pron = ss "you" ;
+  youPolPlFem_Pron = notYet "youPolPlFem_Pron" ; 
 
 -- German
     -- UttAccNP : NP -> Utt ; -- him (accusative)
-    UttAccNP = id SS ;
+  UttAccNP = notYet "UttAccNP" ; 
     -- UttDatNP : NP -> Utt ; -- him (dative)
-    UttDatNP = id SS ;
+  UttDatNP = notYet "UttDatNP" ; 
     -- UttAccIP : IP -> Utt ; -- whom (accusative)
-    UttAccIP = id SS ;
+  UttAccIP = notYet "UttAccIP" ; 
     -- UttDatIP : IP -> Utt ; -- whom (dative)
-    UttDatIP = id SS ;
+  UttDatIP = notYet "UttDatIP" ; 
 
 
 }

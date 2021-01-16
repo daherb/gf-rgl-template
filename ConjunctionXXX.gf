@@ -18,23 +18,23 @@ concrete ConjunctionXXX of Conjunction = CatXXX ** open Prelude in {
   lin
     
     -- ConjS    : Conj -> ListS -> S ;       -- he walks and she runs
-    ConjS = cc2 ;
+  ConjS = notYet "ConjS" ; 
     -- ConjRS   : Conj -> ListRS -> RS ;     -- who walks and whose mother runs
-    ConjRS = cc2 ;
+  ConjRS = notYet "ConjRS" ; 
     -- ConjAP   : Conj -> ListAP -> AP ;     -- cold and warm
-    ConjAP = cc2 ;
+  ConjAP = notYet "ConjAP" ; 
     -- ConjNP   : Conj -> ListNP -> NP ;     -- she or we
-    ConjNP = cc2 ;
+  ConjNP = notYet "ConjNP" ; 
     -- ConjAdv  : Conj -> ListAdv -> Adv ;   -- here or there
-    ConjAdv = cc2 ;
+  ConjAdv = notYet "ConjAdv" ; 
     -- ConjAdV  : Conj -> ListAdV -> AdV ;   -- always or sometimes
-    ConjAdV = cc2 ;
+  ConjAdV = notYet "ConjAdV" ; 
     -- ConjIAdv : Conj -> ListIAdv -> IAdv ; -- where and with whom
-    ConjIAdv = cc2 ;
+  ConjIAdv = notYet "ConjIAdv" ; 
     -- ConjCN   : Conj -> ListCN -> CN ;     -- man and woman
-    ConjCN = cc2 ;
+  ConjCN = notYet "ConjCN" ; 
     -- ConjDet  : Conj -> ListDAP -> Det ;   -- his or her
-    ConjDet = cc2 ;
+  ConjDet = notYet "ConjDet" ; 
 
 --2 Categories
 
@@ -64,48 +64,48 @@ concrete ConjunctionXXX of Conjunction = CatXXX ** open Prelude in {
 
   lin
     -- BaseAP : AP -> AP -> ListAP ;       -- red, white
-    BaseDAP = cc2 ;
+  BaseDAP = notYet "BaseDAP" ; 
     -- ConsAP : AP -> ListAP -> ListAP ;   -- red, white, blue
-    ConsDAP = cc2 ;
+  ConsDAP = notYet "ConsDAP" ; 
     
     -- BaseAP : AP -> AP -> ListAP ;       -- red, white
-    BaseAP = cc2 ;
+  BaseAP = notYet "BaseAP" ; 
     -- ConsAP : AP -> ListAP -> ListAP ;   -- red, white, blue
-    ConsAP = cc2 ;
+  ConsAP = notYet "ConsAP" ; 
     
     -- BaseAdV : AdV -> AdV -> ListAdV ;     -- always, sometimes
-    BaseAdV = cc2 ;
+  BaseAdV = notYet "BaseAdV" ; 
     -- ConsAdV : AdV -> ListAdV -> ListAdV ; -- always, sometimes, never
-    ConsAdV = cc2 ;
+  ConsAdV = notYet "ConsAdV" ; 
     
     -- BaseAdv : Adv -> Adv -> ListAdv ;     -- here, there
-    BaseAdv = cc2 ;
+  BaseAdv = notYet "BaseAdv" ; 
     -- ConsAdv : Adv -> ListAdv -> ListAdv ; -- here, there, everywhere
-    ConsAdv = cc2 ;
+  ConsAdv = notYet "ConsAdv" ; 
     
     -- BaseCN : CN -> CN -> ListCN ;      -- man, woman
-    BaseCN = cc2 ;
+  BaseCN = notYet "BaseCN" ; 
     -- ConsCN : CN -> ListCN -> ListCN ;  -- man, woman, child
-    ConsCN = cc2 ;
+  ConsCN = notYet "ConsCN" ; 
 
     -- BaseIAdv : IAdv -> IAdv -> ListIAdv ;     -- where, when
-    BaseIAdv = cc2 ;
+  BaseIAdv = notYet "BaseIAdv" ; 
     -- ConsIAdv : IAdv -> ListIAdv -> ListIAdv ; -- where, when, why
-    ConsIAdv = cc2 ;
+  ConsIAdv = notYet "ConsIAdv" ; 
     
     -- BaseNP : NP -> NP -> ListNP ;      -- John, Mary
-    BaseNP = cc2 ;
+  BaseNP = notYet "BaseNP" ; 
     -- ConsNP : NP -> ListNP -> ListNP ;  -- John, Mary, Bill
-    ConsNP = cc2 ;
+  ConsNP = notYet "ConsNP" ; 
     
     -- BaseRS : RS -> RS -> ListRS ;       -- who walks, whom I know
-    BaseRS = cc2 ;
+  BaseRS = notYet "BaseRS" ; 
     -- ConsRS : RS -> ListRS -> ListRS ;   -- who wals, whom I know, who is here
-    ConsRS = cc2 ;
+  ConsRS = notYet "ConsRS" ; 
 
     -- BaseS : S -> S -> ListS ;      -- John walks, Mary runs
-    BaseS = cc2 ;
+  BaseS = notYet "BaseS" ; 
     -- ConsS : S -> ListS -> ListS ;  -- John walks, Mary runs, Bill swims
-    ConsS = cc2 ;
+  ConsS = notYet "ConsS" ; 
 }
 

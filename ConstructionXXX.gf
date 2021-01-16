@@ -16,57 +16,57 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
   lin
     
     --     hungry_VP     : VP ;                 -- x is hungry / x a faim (Fre)
-    hungry_VP = ss "hungry" ;
+  hungry_VP = notYet "hungry_VP" ; 
     --     thirsty_VP    : VP ;                 -- x is thirsty / x a soif (Fre)
-    thirsty_VP = ss "thirsty" ;
+  thirsty_VP = notYet "thirsty_VP" ; 
     --     tired_VP      : VP ;                 -- x is tired / x estoy cansado (Spa)
-    tired_VP = ss "tired" ;
+  tired_VP = notYet "tired_VP" ; 
     --     scared_VP     : VP ;                 -- x is scared
-    scared_VP = ss "scared" ;
+  scared_VP = notYet "scared_VP" ; 
     --     ill_VP        : VP ;                 -- x is ill
-    ill_VP = ss "ill" ;
+  ill_VP = notYet "ill_VP" ; 
     --     ready_VP      : VP ;                 -- x is ready
-    ready_VP = ss "ready" ;
+  ready_VP = notYet "ready_VP" ; 
     --     has_age_VP    : Card -> VP ;         -- x is y years old / x a y ans (Fre)
-    has_age_VP = id SS ;
+  has_age_VP = notYet "has_age_VP" ; 
     --     have_name_Cl  : NP -> NP -> Cl ;     -- x's name is y / x s'appelle y (Fre)
-    have_name_Cl = cc2 ;
+  have_name_Cl = notYet "have_name_Cl" ; 
     --     married_Cl    : NP -> NP -> Cl ;     -- x is married to y / x on naimisissa y:n kanssa (Fin)
-    married_Cl = cc2 ;
+  married_Cl = notYet "married_Cl" ; 
     --     what_name_QCl : NP -> QCl ;          -- what is x's name / wie heisst x (Ger)
-    what_name_QCl = id SS ;
+  what_name_QCl = notYet "what_name_QCl" ; 
     --     how_old_QCl   : NP -> QCl ;          -- how old is x / quanti anni ha x (Ita)
-    how_old_QCl = id SS ;
+  how_old_QCl = notYet "how_old_QCl" ; 
     --     how_far_QCl   : NP -> QCl ;          -- how far is x / quanto dista x (Ita)
-    how_far_QCl = id SS ;
+  how_far_QCl = notYet "how_far_QCl" ; 
     
 -- -- some more things
     
     --     weather_adjCl : AP -> Cl ;           -- it is warm / il fait chaud (Fre)
-    weather_adjCl = id SS ;
+  weather_adjCl = notYet "weather_adjCl" ; 
     --     is_right_VP   : VP ;                 -- he is right / il a raison (Fre)
-    is_right_VP = ss "is right" ;
+  is_right_VP = notYet "is_right_VP" ; 
 --     is_wrong_VP   : VP ;                 -- he is wrong / han har fel (Swe)
-    is_wrong_VP = ss "is wrong" ;
+  is_wrong_VP = notYet "is_wrong_VP" ; 
     
     --     n_units_AP    : Card -> CN -> A  -> AP ;  -- x inches long
-    n_units_AP = cc3 ;
+  n_units_AP = notYet "n_units_AP" ; 
     --     n_units_of_NP : Card -> CN -> NP -> NP ;  -- x ounces of this flour
-    n_units_of_NP = cc3 ;
+  n_units_of_NP = notYet "n_units_of_NP" ; 
     --     n_unit_CN     : Card -> CN -> CN -> CN ;  -- x gallon bottle
-    n_unit_CN = cc3 ;
+  n_unit_CN = notYet "n_unit_CN" ; 
     
 -- -- containers
     --     bottle_of_CN : NP -> CN ;       --- bottle of beer / flaska öl (Swe)
-    bottle_of_CN = id SS ;
+  bottle_of_CN = notYet "bottle_of_CN" ; 
     --     cup_of_CN    : NP -> CN ;       --- cup of tea / kupillinen teetä (Fin)
-    cup_of_CN = id SS ;
+  cup_of_CN = notYet "cup_of_CN" ; 
 --     glass_of_CN  : NP -> CN ;       --- glass of wine / lasillinen viiniä (Fin)
-    glass_of_CN = id SS ;
+  glass_of_CN = notYet "glass_of_CN" ; 
     
 -- -- idiomatic expressions
     --     few_X_short_of_Y : NP -> CN -> CN -> S ; --- NP is a few X's short of a Y / NP:llä ei ole kaikki X:t Y:ssä (Fin)
-    few_X_short_of_Y = cc3 ;
+  few_X_short_of_Y = notYet "few_X_short_of_Y" ; 
 
 {- 
 ---- postponed  
@@ -100,88 +100,88 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
   lin
     
     -- timeunitAdv   : Card -> Timeunit -> Adv ; -- (for) three hours
-    timeunitAdv = cc2 ;
+  timeunitAdv = notYet "timeunitAdv" ; 
     -- timeunitRange : Card -> Card -> Timeunit -> Adv ; -- (cats live) ten to twenty years
-    timeunitRange = cc3 ;
+  timeunitRange = notYet "timeunitRange" ; 
     
     -- oneHour : Hour ;
-    oneHour = ss "one" ;
+  oneHour = notYet "oneHour" ; 
     -- twoHour : Hour ;
-    twoHour = ss "two" ;
+  twoHour = notYet "twoHour" ; 
     -- threeHour : Hour ;
-    threeHour = ss "three" ;
+  threeHour = notYet "threeHour" ; 
       -- fourHour : Hour ;
-    fourHour = ss "four" ;
+  fourHour = notYet "fourHour" ; 
     -- fiveHour : Hour ;
-    fiveHour = ss "five" ;
+  fiveHour = notYet "fiveHour" ; 
     -- sixHour : Hour ;
-    sixHour = ss "six" ;
+  sixHour = notYet "sixHour" ; 
     -- sevenHour : Hour ;
-    sevenHour = ss "seven" ;
+  sevenHour = notYet "sevenHour" ; 
     -- eightHour : Hour ;
-    eightHour = ss "eight" ;
+  eightHour = notYet "eightHour" ; 
     -- nineHour : Hour ;
-    nineHour = ss "nine" ;
+  nineHour = notYet "nineHour" ; 
     -- tenHour : Hour ;
-    tenHour = ss "ten" ;
+  tenHour = notYet "tenHour" ; 
     -- elevenHour : Hour ;
-    elevenHour = ss "eleven" ;
+  elevenHour = notYet "elevenHour" ; 
     -- twelveHour : Hour ;
-    twelveHour = ss "twelve" ;
+  twelveHour = notYet "twelveHour" ; 
     -- thirteenHour : Hour ;
-    thirteenHour = ss "one" ;
+  thirteenHour = notYet "thirteenHour" ; 
     -- fourteenHour : Hour ;
-    fourteenHour = ss "two" ;
+  fourteenHour = notYet "fourteenHour" ; 
     -- fifteenHour : Hour ;
-    fifteenHour = ss "three" ;
+  fifteenHour = notYet "fifteenHour" ; 
     -- sixteenHour : Hour ;
-    sixteenHour = ss "four" ;
+  sixteenHour = notYet "sixteenHour" ; 
     -- seventeenHour : Hour ;
-    seventeenHour = ss "five" ;
+  seventeenHour = notYet "seventeenHour" ; 
     -- eighteenHour : Hour ;
-    eighteenHour = ss "six" ;
+  eighteenHour = notYet "eighteenHour" ; 
     -- nineteenHour : Hour ;
-    nineteenHour = ss "seven" ;
+  nineteenHour = notYet "nineteenHour" ; 
     -- twentyHour : Hour ;
-    twentyHour = ss "eight" ;
+  twentyHour = notYet "twentyHour" ; 
     -- twentyOneHour : Hour ;
-    twentyOneHour = ss "nine" ;
+  twentyOneHour = notYet "twentyOneHour" ; 
     -- twentyTwoHour : Hour ;
-    twentyTwoHour = ss "ten" ;
+  twentyTwoHour = notYet "twentyTwoHour" ; 
     -- twentyThreeHour : Hour ;
-    twentyThreeHour = ss "eleven" ;
+  twentyThreeHour = notYet "twentyThreeHour" ; 
     -- twentyFourHour : Hour ;
-    twentyFourHour = ss "twelve" ;
+  twentyFourHour = notYet "twentyFourHour" ; 
     
     -- timeHour : Hour -> Adv ; -- at three a.m./p.m.
-    timeHour = id SS ;
+  timeHour = notYet "timeHour" ; 
     -- timeHourMinute : Hour -> Card -> Adv ; -- at six forty a.m./p.m.
-    timeHourMinute = cc2 ;
+  timeHourMinute = notYet "timeHourMinute" ; 
     
     -- weekdayPunctualAdv : Weekday -> Adv ;  -- on Monday
-    weekdayPunctualAdv = id SS ;
+  weekdayPunctualAdv = notYet "weekdayPunctualAdv" ; 
     -- weekdayHabitualAdv : Weekday -> Adv ;  -- on Mondays
-    weekdayHabitualAdv = id SS ;
+  weekdayHabitualAdv = notYet "weekdayHabitualAdv" ; 
     -- weekdayLastAdv : Weekday -> Adv ;      -- last Monday
-    weekdayLastAdv = id SS ;
+  weekdayLastAdv = notYet "weekdayLastAdv" ; 
     -- weekdayNextAdv : Weekday -> Adv ;      -- next Monday
-    weekdayNextAdv = id SS ;
+  weekdayNextAdv = notYet "weekdayNextAdv" ; 
     
     -- monthAdv        : Month -> Adv ;                        -- in June
-    monthAdv = id SS ;
+  monthAdv = notYet "monthAdv" ; 
     -- yearAdv         : Year -> Adv ;                         -- in 1976
-    yearAdv = id SS ;
+  yearAdv = notYet "yearAdv" ; 
     -- dayMonthAdv     : Monthday -> Month -> Adv ;            -- on 17 May
-    dayMonthAdv = cc2 ;
+  dayMonthAdv = notYet "dayMonthAdv" ; 
     -- monthYearAdv    : Month -> Year -> Adv ;                -- in May 2013
-    monthYearAdv = cc2 ;
+  monthYearAdv = notYet "monthYearAdv" ; 
     -- dayMonthYearAdv : Monthday -> Month -> Year -> Adv ;    -- on 17 May 2013
-    dayMonthYearAdv = cc3 ;
+  dayMonthYearAdv = notYet "dayMonthYearAdv" ; 
     
     -- intYear     : Int -> Year ;  -- (year) 1963
-    intYear = id SS ;
+  intYear = notYet "intYear" ; 
     -- intMonthday : Int -> Monthday ; -- 31th (March)
-    intMonthday = id SS ;
+  intMonthday = notYet "intMonthday" ; 
     
     
 -- languages
@@ -193,152 +193,152 @@ concrete ConstructionXXX of Construction = CatXXX ** open Prelude in {
   lin
     
     -- InLanguage : Language -> Adv ; -- in English, auf englisch, englanniksi, etc
-    InLanguage = id SS ;
+  InLanguage = notYet "InLanguage" ; 
     
 -- coercions to RGL categories
 
     -- weekdayN   : Weekday -> N ; -- (this) Monday
-    weekdayN = id SS ;
+  weekdayN = notYet "weekdayN" ; 
   -- monthN     : Month -> N ;   -- (this) November
-    monthN = id SS ;
+  monthN = notYet "monthN" ; 
     -- weekdayPN  : Weekday -> PN ; -- Monday (is free)
-    weekdayPN = id SS ;
+  weekdayPN = notYet "weekdayPN" ; 
   -- monthPN    : Month -> PN ;   -- March (is cold)
-    monthPN = id SS ;
+  monthPN = notYet "monthPN" ; 
     
     -- languageNP : Language -> NP ;  -- French (is easy)
-    languageNP = id SS ;
+  languageNP = notYet "languageNP" ; 
     -- languageCN : Language -> CN ;  -- (my) French
-    languageCN = id SS ;
+  languageCN = notYet "languageCN" ; 
 
 ----------------------------------------------
 ---- lexicon of special names
 
     -- second_Timeunit : Timeunit ;
-    second_Timeunit = ss "second" ;
+  second_Timeunit = notYet "second_Timeunit" ; 
     -- minute_Timeunit : Timeunit ;
-    minute_Timeunit = ss "Timeunit" ;
+  minute_Timeunit = notYet "minute_Timeunit" ; 
     -- hour_Timeunit : Timeunit ;
     hour_Timeunit = ss "hour"; 
     -- day_Timeunit : Timeunit ;
-    day_Timeunit = ss "day" ;
+  day_Timeunit = notYet "day_Timeunit" ; 
     -- week_Timeunit : Timeunit ;
-    week_Timeunit = ss "week" ;
+  week_Timeunit = notYet "week_Timeunit" ; 
     -- month_Timeunit : Timeunit ;
-    month_Timeunit = ss "month" ;
+  month_Timeunit = notYet "month_Timeunit" ; 
     -- year_Timeunit : Timeunit ;
-    year_Timeunit = ss "year" ;
+  year_Timeunit = notYet "year_Timeunit" ; 
 
     -- monday_Weekday : Weekday ;
-    monday_Weekday = ss "Monday" ;
+  monday_Weekday = notYet "monday_Weekday" ; 
     -- tuesday_Weekday : Weekday ;
-    tuesday_Weekday = ss "Tuesday" ;
+  tuesday_Weekday = notYet "tuesday_Weekday" ; 
     -- wednesday_Weekday : Weekday ;
-    wednesday_Weekday = ss "Wednesday" ;
+  wednesday_Weekday = notYet "wednesday_Weekday" ; 
     -- thursday_Weekday : Weekday ;
-    thursday_Weekday = ss "Thursday" ;
+  thursday_Weekday = notYet "thursday_Weekday" ; 
     -- friday_Weekday : Weekday ;
-    friday_Weekday = ss "Friday" ;
+  friday_Weekday = notYet "friday_Weekday" ; 
     -- saturday_Weekday : Weekday ;
-    saturday_Weekday = ss "Saturday" ;
+  saturday_Weekday = notYet "saturday_Weekday" ; 
     -- sunday_Weekday : Weekday ;
-    sunday_Weekday = ss "Sunday" ;
+  sunday_Weekday = notYet "sunday_Weekday" ; 
 
     -- january_Month : Month ;
-    january_Month = ss "January" ;
+  january_Month = notYet "january_Month" ; 
     -- february_Month : Month ;
-    february_Month = ss "February" ;
+  february_Month = notYet "february_Month" ; 
     -- march_Month : Month ;
-    march_Month = ss "March" ;
+  march_Month = notYet "march_Month" ; 
     -- april_Month : Month ;
-    april_Month = ss "April" ;
+  april_Month = notYet "april_Month" ; 
     -- may_Month : Month ;
-    may_Month = ss "May" ;
+  may_Month = notYet "may_Month" ; 
     -- june_Month : Month ;
-    june_Month = ss "June" ;
+  june_Month = notYet "june_Month" ; 
     -- july_Month : Month ;
-    july_Month = ss "July" ;
+  july_Month = notYet "july_Month" ; 
     -- august_Month : Month ;
-    august_Month = ss "August" ;
+  august_Month = notYet "august_Month" ; 
     -- september_Month : Month ;
-    september_Month = ss "September" ;
+  september_Month = notYet "september_Month" ; 
     -- october_Month : Month ;
-    october_Month = ss "October" ;
+  october_Month = notYet "october_Month" ; 
     -- november_Month : Month ;
-    november_Month = ss "November" ;
+  november_Month = notYet "november_Month" ; 
     -- december_Month : Month ;
-    december_Month = ss "December" ;
+  december_Month = notYet "december_Month" ; 
 
 
     -- afrikaans_Language : Language ;
-    afrikaans_Language = ss "Afrikaans" ;
+  afrikaans_Language = notYet "afrikaans_Language" ; 
     -- amharic_Language : Language ;
-    amharic_Language = ss "Amharic" ;
+  amharic_Language = notYet "amharic_Language" ; 
     -- arabic_Language : Language ;
-    arabic_Language = ss "Arabic" ;
+  arabic_Language = notYet "arabic_Language" ; 
     -- bulgarian_Language : Language ;
-    bulgarian_Language = ss "Bulgarian" ;
+  bulgarian_Language = notYet "bulgarian_Language" ; 
     -- catalan_Language : Language ;
-    catalan_Language = ss "Catalan" ;
+  catalan_Language = notYet "catalan_Language" ; 
     -- chinese_Language : Language ;
-    chinese_Language = ss "Chinese" ;
+  chinese_Language = notYet "chinese_Language" ; 
     -- danish_Language : Language ;
-    danish_Language = ss "Danish" ;
+  danish_Language = notYet "danish_Language" ; 
     -- dutch_Language : Language ;
-    dutch_Language = ss "Dutch" ;
+  dutch_Language = notYet "dutch_Language" ; 
     -- english_Language : Language ;
-    english_Language = ss "English" ;
+  english_Language = notYet "english_Language" ; 
     -- estonian_Language : Language ;
-    estonian_Language = ss "Estonian" ;
+  estonian_Language = notYet "estonian_Language" ; 
     -- finnish_Language : Language ;
-    finnish_Language = ss "Finnish" ;
+  finnish_Language = notYet "finnish_Language" ; 
     -- french_Language : Language ;
-    french_Language = ss "Frenche" ;
+  french_Language = notYet "french_Language" ; 
     -- german_Language : Language ;
-    german_Language = ss "German" ;
+  german_Language = notYet "german_Language" ; 
     -- greek_Language : Language ;
-    greek_Language = ss "Greek" ;
+  greek_Language = notYet "greek_Language" ; 
     -- hebrew_Language : Language ;
-    hebrew_Language = ss "Hebrew" ;
+  hebrew_Language = notYet "hebrew_Language" ; 
     -- hindi_Language : Language ;
-    hindi_Language = ss "Hindi" ;
+  hindi_Language = notYet "hindi_Language" ; 
     -- japanese_Language : Language ;
-    japanese_Language = ss "Japanese" ;
+  japanese_Language = notYet "japanese_Language" ; 
     -- italian_Language : Language ;
-    italian_Language = ss "Italian" ;
+  italian_Language = notYet "italian_Language" ; 
     -- latin_Language : Language ;
-    latin_Language = ss "Latin" ;
+  latin_Language = notYet "latin_Language" ; 
     -- latvian_Language : Language ;
-    latvian_Language = ss "Latvian" ;
+  latvian_Language = notYet "latvian_Language" ; 
     -- maltese_Language : Language ;
-    maltese_Language = ss "Maltese" ;
+  maltese_Language = notYet "maltese_Language" ; 
     -- nepali_Language : Language ;
-    nepali_Language = ss "Nepali" ;
+  nepali_Language = notYet "nepali_Language" ; 
     -- norwegian_Language : Language ;
-    norwegian_Language = ss "Norwegian" ;
+  norwegian_Language = notYet "norwegian_Language" ; 
     -- persian_Language : Language ;
-    persian_Language = ss "Persian" ;
+  persian_Language = notYet "persian_Language" ; 
     -- polish_Language : Language ;
-    polish_Language = ss "Polish" ;
+  polish_Language = notYet "polish_Language" ; 
     -- punjabi_Language : Language ;
-    punjabi_Language = ss "Punjabi" ;
+  punjabi_Language = notYet "punjabi_Language" ; 
     -- romanian_Language : Language ;
-    romanian_Language = ss "Romanian" ;
+  romanian_Language = notYet "romanian_Language" ; 
     -- russian_Language : Language ;
-    russian_Language = ss "Russian" ;
+  russian_Language = notYet "russian_Language" ; 
     -- sindhi_Language : Language ;
-    sindhi_Language = ss "Sindhi" ;
+  sindhi_Language = notYet "sindhi_Language" ; 
     -- spanish_Language : Language ;
-    spanish_Language = ss "Spanish" ;
+  spanish_Language = notYet "spanish_Language" ; 
     -- swahili_Language : Language ;
-    swahili_Language = ss "Swahili" ;
+  swahili_Language = notYet "swahili_Language" ; 
     -- swedish_Language : Language ;
-    swedish_Language = ss "Swedish" ;
+  swedish_Language = notYet "swedish_Language" ; 
     -- thai_Language : Language ;
-    thai_Language = ss "Thai" ;
+  thai_Language = notYet "thai_Language" ; 
     -- turkish_Language : Language ;
-    turkish_Language = ss "Turkish" ;
+  turkish_Language = notYet "turkish_Language" ; 
     -- urdu_Language : Language ;
-    urdu_Language = ss "Urdu" ;
+  urdu_Language = notYet "urdu_Language" ; 
    
 }
