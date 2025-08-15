@@ -19,6 +19,7 @@ concrete GrammarXXX of Grammar =
   , StructuralXXX
   , IdiomXXX
   , TenseXXX
+  , NamesXXX
 --  , TransferXXX 
   ;
 
