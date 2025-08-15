@@ -93,6 +93,7 @@ concrete CatXXX of Cat = CommonX ** open Prelude in {
 
     Numeral = SS ;  -- cardinal or ordinal in words       e.g. "five/fifth"
     Digits = SS ;   -- cardinal or ordinal in digits      e.g. "1,000/1,000th"
+    Decimal = SS ;       -- decimal number                     e.g. "1/2/3.14/-1"
 
 --2 Structural words
 
@@ -126,6 +127,10 @@ concrete CatXXX of Cat = CommonX ** open Prelude in {
     N = SS ;        -- common noun                         e.g. "house"
     N2 = SS ;       -- relational noun                     e.g. "son"
     N3 = SS ;       -- three-place relational noun         e.g. "connection"
+    GN = SS ;    -- given name                          e.g. "George"
+    SN = SS ;    -- second name                         e.g. "Washington"
+    LN = SS ;    -- location name                       e.g. "Sweden"
+
     PN = SS ;       -- proper name                         e.g. "Paris"
 
 -- DEPRECATED: QuantSg, QuantPl
