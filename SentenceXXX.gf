@@ -47,6 +47,8 @@ concrete SentenceXXX of Sentence = CatXXX ** open Prelude in {
 
     -- ImpVP     : VP -> Imp ;              -- love yourselves
     ImpVP = id SS ;
+    -- AdvImp : Adv -> Imp -> Imp ;         -- please love yourselves
+    AdvImp = cc2 ;
     
 --2 Embedded sentences
 

@@ -68,9 +68,11 @@ concrete NounXXX of Noun = CatXXX ** open Prelude in {
     
 -- $Card$ consists of either digits or numeral words.
 
-    --     NumDigits  : Digits  -> Card ;  -- 51
+    -- NumDigits  : Digits  -> Card ;  -- 51
     NumDigits = id SS ;
-    --     NumNumeral : Numeral -> Card ;  -- fifty-one
+    -- NumDecimal : Decimal -> Card ;  -- 3.14, -1, etc
+    NumDecimal = id SS ;
+    -- NumNumeral : Numeral -> Card ;  -- fifty-one
     NumNumeral = id SS ;
 
 -- The construction of numerals is defined in [Numeral Numeral.html].
@@ -189,5 +191,11 @@ concrete NounXXX of Noun = CatXXX ** open Prelude in {
     AdjDAP = cc2 ;
     -- DetDAP : Det -> DAP ;          -- this (or that)
     DetDAP = id SS ;
+
+--2 Quantities
+
+    -- QuantityNP : Decimal -> MU -> NP ;
+    QuantityNP = cc2 ;
+
 
 }

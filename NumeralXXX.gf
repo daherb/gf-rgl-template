@@ -20,11 +20,14 @@
 concrete NumeralXXX of Numeral = CatXXX [Numeral,Digits] ** open Prelude in {
 
   lincat 
-    Digit = SS ;      -- 2..9
-    Sub10 = SS ;      -- 1..9
-    Sub100 = SS ;     -- 1..99
-    Sub1000 = SS ;    -- 1..999
-    Sub1000000 = SS;  -- 1..999999
+    Digit = SS ;            -- 2..9
+    Sub10 = SS ;            -- 1..9
+    Sub100 = SS ;           -- 1..99
+    Sub1000 = SS ;          -- 1..999
+    Sub1000000 = SS;        -- 1..999999
+    Sub1000000000 = SS ;    -- 1..999999999
+    Sub1000000000000 = SS ; -- 1..999999999999
+ 
 
   lin
     -- num : Sub1000000 -> Numeral ; -- 123456 [coercion to top category]
@@ -58,16 +61,45 @@ concrete NumeralXXX of Numeral = CatXXX [Numeral,Digits] ** open Prelude in {
     pot1plus = cc2 ;
     -- pot1as2 : Sub100 -> Sub1000 ;                 -- coercion of 1..99
     pot1as2 = id SS ;
+    -- pot21 : Sub1000 ;                             -- a hundred instead of one hundred
+    pot21 = ss "a hundred" ;
     -- pot2 : Sub10 -> Sub1000 ;                     -- m * 100
     pot2 = id SS ;
     -- pot2plus : Sub10 -> Sub100 -> Sub1000 ;       -- m * 100 + n
     pot2plus = cc2 ;
     -- pot2as3 : Sub1000 -> Sub1000000 ;             -- coercion of 1..999
     pot2as3 = id SS ;
+    -- pot31 : Sub1000000 ;                          -- a thousand instead of one thousand
+    pot31 = ss "a thousand" ;
     -- pot3 : Sub1000 -> Sub1000000 ;                -- m * 1000
     pot3 = id SS ;
     -- pot3plus : Sub1000 -> Sub1000 -> Sub1000000 ; -- m * 1000 + n
     pot3plus = cc2 ;
+    -- pot3as4 : Sub1000000 -> Sub1000000000 ;       -- coercion of 1..999999
+    pot3as4 = id SS ;
+    -- pot3decimal : Decimal -> Sub1000000 ;         -- 3.5 thousand
+    pot3decimal = id SS ;
+
+    -- pot41 : Sub1000000000 ;                                    -- a million instead of one million
+    pot41 = ss "a million" ;
+    -- pot4  : Sub1000 -> Sub1000000000 ;                         -- m * 1000000000
+    pot4 = id SS ;
+    -- pot4plus : Sub1000 -> Sub1000000 -> Sub1000000000 ;        -- m * 1000000000 + n
+    pot4plus = cc2;
+    -- pot4as5 : Sub1000000000 -> Sub1000000000000 ;              -- coercion of 1..999999999
+    pot4as5 = id SS ;
+    -- pot4decimal : Decimal -> Sub1000000000 ;                   -- 3.5 million
+    pot4decimal = id SS ;
+    
+    -- pot51 : Sub1000000000000 ;                                 -- a billion instead of one billion
+    pot51 = ss "a billion" ;
+    -- pot5  : Sub1000 -> Sub1000000000000 ;                      -- m * 1000000000
+    pot5 = id SS ;
+    -- pot5plus : Sub1000 -> Sub1000000000 -> Sub1000000000000 ;  -- m * 1000000000 + n
+    pot5plus = cc2 ;
+    -- pot5decimal : Decimal -> Sub1000000000000 ;                -- 3.5 billion
+    pot5decimal = id SS ;
+
     
 -- Numerals as sequences of digits have a separate, simpler grammar
 
@@ -91,5 +123,12 @@ concrete NumeralXXX of Numeral = CatXXX [Numeral,Digits] ** open Prelude in {
     D_7 = ss "7" ;
     D_8 = ss "8" ;
     D_9 = ss "9" ;
-    
+
+    -- PosDecimal : Digits -> Decimal ;        --  8
+    PosDecimal = id SS ;
+    -- NegDecimal : Digits -> Decimal ;        -- -8
+    NegDecimal = id SS ;
+    -- IFrac : Decimal -> Dig -> Decimal ;     -- 3.14 -> 3.141
+    IFrac = cc2 ;
+
 }
